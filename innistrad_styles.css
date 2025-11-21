@@ -1,0 +1,69 @@
+h1{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+#img-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#img-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#gods1{
+    width: 677px;
+    text-align: center;
+}
+#gods2{
+    width: 650px;
+}
+#regions{
+    width: 300px;
+}
+#map{
+    width: 300px;
+}
+#angels1{
+    width: 400px;
+}
+#angels2{
+    width: 400px;
+}
+#angels3{
+    width: 400px;
+}
+body{
+    background-color: rgb(209, 198, 189);
+    color: rgb(48, 50, 61);
+}
+h1{
+    text-align: center;
+    font-size: 5em;
+}
+h2{
+    text-align: center;
+    font-size: 4em;
+}
+p{
+    text-align: center;
+    font-size: 2em;
+}
+ul{
+    font-size: 2em;
+}
+a{
+    font-size: 2em;               
+}
+            
