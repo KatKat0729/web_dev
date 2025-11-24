@@ -2,15 +2,20 @@ p{
     font-family: "Slabo 27px", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: larger;
+    font-size: 4em;
     margin: 5px;
 }
 button{
-    padding: 20px;
-    margin: 50px;
+    padding: 10px;
+    margin: 20px;
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    
 }
 img{
-    width: 300px;
+    width: 800px;
 }
 #content-wrapper{
     display: grid;
@@ -22,4 +27,7 @@ img{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+#hidden{
+    display: none;
 }
