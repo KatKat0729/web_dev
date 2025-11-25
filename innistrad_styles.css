@@ -73,6 +73,14 @@ a{
 img{
     margin: 20px;
 }
+button{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 20px;
+    padding: 10px;
+}
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;

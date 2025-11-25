@@ -3,17 +3,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Dungeons and Dragons: Innistrad</title>
+        <title>Innistrad</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="innistrad_styles.css">
+        <script>
+            function toggleSessionRecaps(){
+                if (document.getElementById('sessionRecapsTitle').style.display === 'none') {
+                    document.getElementById('sessionRecapsTitle').style.display = 'block';
+                    document.getElementById('sessionRecapsContent').style.display = 'block';
+                    document.getElementById('short_rest').style.display = 'block';
+                    document.getElementById('toggleBtn').textContent = 'Hide Session Recaps';
+                } else {
+                    document.getElementById('sessionRecapsTitle').style.display = 'none';
+                    document.getElementById('sessionRecapsContent').style.display = 'none';
+                    document.getElementById('short_rest').style.display = 'none';
+                    document.getElementById('toggleBtn').textContent = 'Show Session Recaps';
+                }
+            }
+        </script>
         <style>
             #gods1{
-                width: 650px;
-                text-align: center;
-            }
-            #gods2{
                 width: 650px;
                 text-align: center;
             }
@@ -30,6 +41,9 @@
                 width: 650px;
             }
             #angels3{
+                width: 650px;
+            }
+            #short_rest{
                 width: 650px;
             }
             body{
@@ -53,6 +67,19 @@
             }
             a{
                 font-size: 2em;               
+            }
+            #toggleBtn{
+                font-size: 1.5em;
+                padding: 10px 20px;
+                margin: 20px 0;
+                cursor: pointer;
+                background-color: rgb(100, 80, 70);
+                color: rgb(209, 198, 189);
+                border: 2px solid rgb(48, 50, 61);
+                border-radius: 5px;
+            }
+            #toggleBtn:hover{
+                background-color: rgb(130, 110, 100);
             }
             
         </style>
@@ -199,7 +226,14 @@
             <li>Sorin Marcov</li>
             <li>Geralph Cicani</li>
             <li>Gisa Cecani</li>
-        </ul>
+    </ul>
+<button id="toggleBtn" onclick="toggleSessionRecaps()">Hide Session Recaps</button>
+<h2 id="sessionRecapsTitle">Session Recaps</h2>
+    <p id="sessionRecapsContent"><b>SESSION 1  [Avabruck]  -</b> <br>
+        It's the new year in Innistrad: year 700. Meredith was given an escort mission for Adrien Cadault, they met and went south through Gastaff, where Skillet the bounty hunter captured his target and got a new mission.
+         Close by, Solanine was visited by the powerful and cryptic Archangel Liesa. Everyone traveled to Avabruck, where Zeph had been hired by a friendly rancher he met earlier. Some shopping, chatting, and licking later, they all met in City Hall.</p>
+
+    <br>
 
 <h2>Innistrad Playlists</h2>
         <a href="https://www.youtube.com/watch?v=j7LxnzV-Rr4"> INNISTRAD - Disc 1</a>
@@ -225,24 +259,27 @@
         </div>
 
         <div class="image-content">
-            <img src="Innistrad_web_page/gods1p.png" alt="Innistrad Gods 1" id="gods1">
-            <img src="Innistrad_web_page/gods2.png" alt="Innistrad Gods 2" id="gods2">
+            <p><i>Hover over the image to see the other Gods!</i></p>
+            <img src="Innistrad_web_page/gods1p.png" 
+                 alt="Innistrad Gods" 
+                 id="gods1"
+                 onmouseover="this.src='Innistrad_web_page/gods2.png'"
+                 onmouseout="this.src='Innistrad_web_page/gods1p.png'">
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
             <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
             <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
             <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-            <br> <br> <br>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
             <img src="Innistrad_web_page/Innistrad_Regions.webp" alt="Innistrad Regions" id="regions">
             <img src="Innistrad_web_page/Innistrad_Map(1).webp" alt="Innistrad Map" id="map">
-            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
             <img src="Innistrad_web_page/angelsp1.png" alt="Archangles list 1" id="angels1">
             <img src="Innistrad_web_page/angelsp2.png" alt="Archangles list 2" id="angels2">
             <img src="Innistrad_web_page/angelsp3.png" alt="Archangles list 3" id="angels3">
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <img src="Innistrad_web_page/Short_rest.png" alt="Short Rest" id="short_rest">
         </div>
     </div>
-
 </body>
 <html>
