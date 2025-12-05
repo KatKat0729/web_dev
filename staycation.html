@@ -70,6 +70,21 @@
                 gap: 10px;
             }
         </style>
+        <script>
+                        function toggleHistory(){
+                if (document.getElementById('SaltFlatsHistory').style.display === 'none') {
+                    document.getElementById('SaltFlatsHistory').style.display = 'block';
+                    document.getElementById('SaltFlatsContent').style.display = 'block';
+                    document.getElementById('img4').style.display = 'block';
+                    document.getElementById('toggleBtn').textContent = 'Hide More';
+                } else {
+                    document.getElementById('SaltFlatsHistory').style.display = 'none';
+                    document.getElementById('SaltFlatsContent').style.display = 'none';
+                    document.getElementById('img4').style.display = 'none';
+                    document.getElementById('toggleBtn').textContent = 'Show More';
+                }
+            }
+        </script>
     </head>
     <body>
 
@@ -92,9 +107,9 @@
             The Bonneville Salt Flats are definetly worth visiting, especially for the breathtaking scenery, and an unforgettable experience. 
         </p>
 
-        <button></button>
-
-        <p>
+        <button id="toggleBtn" onclick="toggleHistory()">Hide More</button>
+        <h2 id="SaltFlatsHistory">Bonneville Salt Flats History</h2>
+        <p id="SaltFlatsContent">
             The Bonneville Salt flats are found in northwestern Utah, and are also a part of the Great Salt Lake Dessert.
             They were formed because of the evaporation of the Lake Bonneville, which was a massive lake that existed during the Pleistocene era, (around 30,000 years ago).
             Because of climate change, the ancient lake evaporated, and in doing so it left behind a very think crust of salt, most composed of potash salts. They can be so think, up to six feet in some areas!     
