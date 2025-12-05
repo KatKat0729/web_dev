@@ -23,11 +23,11 @@
                 font-style: normal;
                 font-size: 3em;
                 margin: 50px;
-                padding: 50px;
+                padding: 10px;
             }
             p{
                 margin: 50px;
-                padding: 50px;
+                padding: 10px;
                 font-size: 1.5em;
             }
             ul{
@@ -51,6 +51,15 @@
                 height: auto;
                 margin: 2000;
             }
+            button{
+                font-family: "Marcellus", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 2em;
+                margin: 20px;
+                padding: 10px;
+                text-align: center;
+            }
             .grid-container{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -61,13 +70,12 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 20px;
+                gap: 120px;
             }
             .text-content{
                 display: flex;
                 flex-direction: column;
                 align-items: left;
-                gap: 10px;
             }
         </style>
         <script>
@@ -141,13 +149,17 @@
 
         <div class="image-content">
 
-        <img src="https://cdn.britannica.com/00/196200-050-A18811BA/Uyuni-Salt-Flat-Bolivia.jpg" alt="Utah Salt Flats" id="img1">
+            <img src="https://cdn.britannica.com/00/196200-050-A18811BA/Uyuni-Salt-Flat-Bolivia.jpg" alt="Utah Salt Flats" id="img1"
+            onmouseover="document.getElementById('img1').src='https://ctfassets.ksldigital.com/0wjmk6wgfops/1JSCdc84RdUoMmUjfVeEYb/5bbfa23bc98bb8bf50ead1a969bfc8d6/Bonneville_Salt_Flats_Mountains__resize_AdobeStock_313939134.jpeg?q=70'"
+            onmouseout="document.getElementById('img1').src='https://cdn.britannica.com/00/196200-050-A18811BA/Uyuni-Salt-Flat-Bolivia.jpg'">
+
 
         <img src="https://i0.wp.com/etbtravelphotography.com/wp-content/uploads/2021/05/ETB-Travel-Photography2021DSC03848.jpg?fit=870%2C580&ssl=1" alt="Bonneville Salt Flats water reflection" id="img2">
 
+        <img src="https://www.touristsecrets.com/wp-content/uploads/2024/09/bonneville-salt-flats-utahs-speed-secrets-1726445858.jpg" alt="History of Salt Flats" id="img4">
+
         <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_640,q_65,w_640/v1/clients/swat/sifan_liu_Ry6Imrao4hE_unsplash_f5a41659-952b-4646-b013-34c04279f995.jpg" alt="Salt Flats with mountains" id="img3">
 
-        <img src="https://www.touristsecrets.com/wp-content/uploads/2024/09/bonneville-salt-flats-utahs-speed-secrets-1726445858.jpg" alt="History of Salt Flats" id="img4">
 
         </div>
     </div>
